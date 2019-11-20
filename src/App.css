@@ -20,3 +20,70 @@
 .App-link {
   color: #09d3ac;
 }
+
+.Navbar{
+  background-color: black;
+  width: 100vw;
+  height: auto;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  top: 0;
+}
+
+.Navbar img{
+  width: 5em;
+  height: 2.4em;
+  margin-left: auto;
+}
+
+.Navbar a{
+  color: white;
+  font-size: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.Navbar a:hover{
+  color: gray;
+}
+
+.main{
+  width: 100vw;
+  min-height: 88vh;
+  height: auto;
+  display: flex;
+}
+
+.main .left{
+  width: 20%;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-align: center;
+  background-color: gray;
+}
+
+.main .right{
+  width: 20%;
+  text-orientation: unset;
+  writing-mode: vertical-lr;
+  text-align: center;
+  background-color: gray;
+}
+
+.main .center{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogPostSmall{
+  width: auto;
+  height: 20vh;
+  text-align: center;
+  border: 1px solid black;
+  margin: 1%;
+}
