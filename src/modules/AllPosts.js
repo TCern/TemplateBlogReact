@@ -14,6 +14,7 @@ class AllPostsClass extends Component {
     render(){
         return(
             <div>
+                <h1 className="title">My Posts</h1>
                 {this.convertBlogsToComponents()}
             </div>
         )

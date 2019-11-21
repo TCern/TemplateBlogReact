@@ -22,12 +22,21 @@ class BlogPostSmallClass extends Component {
         return(
             <div className="blogPostSmall">
                 <div>
-                    <button style={{float:"right"}} onClick={this.handleDelete}>Delete</button> 
+                    <button className="deleteBtn" onClick={this.handleDelete}>Delete</button> 
                     <br></br>
-                    Title: {this.props.blog.title} </div>
-                Author: {this.props.blog.author}
+                    <h3 style={{padding:0,margin:0}}>
+                        {this.props.blog.title} 
+                    </h3>
+                    
+                </div>
+                <h4 style={{float:"right",marginRight:"1em",padding:0}}>
+                    {this.props.blog.author}
+                </h4>
                 <br></br>
-                {this.props.blog.headline}<br></br>
+                <p className="headline">
+                    {this.props.blog.headline}
+                </p>
+                <br></br>
                 <Link to={"/posts/"+this.props.blog.id}>Read more</Link>
             </div>
         )

@@ -34,13 +34,14 @@ class WritePostClass extends Component {
 
     render(){
         return(
-            <div>
+            <div style={{padding:"2%"}}>
+                <h1 style={{textAlign:"center"}}>Add Blog Post</h1>
                 <form onSubmit={this.handleSubmit}>
-                    Title:<input type="text" id="title"></input><br></br>
-                    Headline:<input type="text" id="headline"></input><br></br>
+                    <input type="text" id="title" placeholder="Title" className="writeBar"></input><br></br>
+                    <input type="text" id="headline" placeholder="Headline" className="writeBar"></input><br></br>
                     Content: <br></br>
-                    <textarea id="content"></textarea><br></br>
-                    <input type="submit"></input>
+                    <textarea id="content" className="writeArea"></textarea><br></br>
+                    <input type="submit" className="submitBtn" value="Submit"></input>
                 </form>
             </div>
         )

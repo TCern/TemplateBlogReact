@@ -45,6 +45,7 @@
   font-size: 100%;
   margin-left: 1em;
   margin-right: 1em;
+  text-decoration: none;
 }
 
 .Navbar a:hover{
@@ -63,7 +64,7 @@
   text-orientation: mixed;
   writing-mode: vertical-rl;
   text-align: center;
-  background-color: gray;
+  background-color: rgb(97, 218, 251);
 }
 
 .main .right{
@@ -71,7 +72,7 @@
   text-orientation: unset;
   writing-mode: vertical-lr;
   text-align: center;
-  background-color: gray;
+  background-color: rgb(97, 218, 251);
 }
 
 .main .center{
@@ -82,8 +83,68 @@
 
 .blogPostSmall{
   width: auto;
-  height: 20vh;
+  height: auto;
+  min-height: 25vh;
   text-align: center;
   border: 1px solid black;
   margin: 1%;
+  padding-bottom: 1em;
+}
+
+.headline{
+  text-align: left;
+  margin-left: 2%;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+.blogBody{
+  white-space: pre-wrap;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  margin-left: 1em;
+}
+
+.writeBar{
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 3em;
+  height: 2em;
+  text-align: center;
+  margin-top: 0.75em;
+}
+
+.submitBtn{
+  width: 20%;
+  height: 4em;
+  background-color: rgb(108, 218, 108);
+  border-radius: 3em;
+  float: right;
+}
+
+.writeArea{
+  resize: none;
+  width: 98%;
+  height: 40vh;
+  border: 1px solid black;
+  border-radius: 2em;
+  margin-bottom: 0.5em; 
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.deleteBtn{
+  background-color: red;
+  border-radius: 1em;
+  float: right;
+}
+
+.title{
+  text-align: center;
+}
+
+.page{
+  border: 1px solid black;
+  border-radius: 1em;
+  margin: 2.5%;
 }
