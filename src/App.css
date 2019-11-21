@@ -54,7 +54,7 @@
 
 .main{
   width: 100vw;
-  min-height: 88vh;
+  min-height: 88.51vh;
   height: auto;
   display: flex;
 }
@@ -98,6 +98,13 @@
   margin-top: 5%;
 }
 
+.homeDiv{
+  background-image: url(https://images.unsplash.com/photo-1542158975-f5f1d887401f?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
+  height:100%;
+  color:white;
+  background-repeat: round;
+}
+
 .blogBody{
   white-space: pre-wrap;
   margin-top: 10%;
@@ -134,7 +141,7 @@
 }
 
 .deleteBtn{
-  background-color: red;
+  background-color: #eb6464;
   border-radius: 1em;
   float: right;
 }
