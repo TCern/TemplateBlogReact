@@ -22,14 +22,14 @@ class WritePostClass extends Component {
         var content = document.getElementById("content").value;
         var author = "A nice person";
         var blog = {
-            id: "3",
+            id: Math.random() + "",
             title : title,
             headline : headline,
             author : author,
             content : content,
         };
         this.props.addBlog(blog);
-        console.log(blog);
+        this.props.history.push("/posts");
     }
 
     render(){
@@ -38,7 +38,8 @@ class WritePostClass extends Component {
                 <form onSubmit={this.handleSubmit}>
                     Title:<input type="text" id="title"></input><br></br>
                     Headline:<input type="text" id="headline"></input><br></br>
-                    Content:<textarea id="content"></textarea><br></br>
+                    Content: <br></br>
+                    <textarea id="content"></textarea><br></br>
                     <input type="submit"></input>
                 </form>
             </div>

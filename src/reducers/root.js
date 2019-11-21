@@ -21,6 +21,13 @@ const initialState = {
         blogs: state.blogs.concat(action.payload)
       });
     }
+    if(action.type === "DELETE_BLOG"){
+      const id = action.payload;
+      const newBlogs = state.blogs.filter(blog => blog.id !== id);
+      return Object.assign({}, state, {
+        blogs: newBlogs
+      })
+    }
     return state;
   };
   export default rootReducer;
